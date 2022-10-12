@@ -9,9 +9,11 @@ class UsersController < ApplicationController
   # end
 
   post "/users" do
+    # make a new user
   end
 
   get "/users/:id" do
+    User.find(params[:id]).to_json
   end
 
 
