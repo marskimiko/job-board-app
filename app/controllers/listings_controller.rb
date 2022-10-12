@@ -6,8 +6,8 @@ class ListingsController < ApplicationController
   end
 
 
-  get "/listings/new" do
-  end
+  # get "/listings/new" do
+  # end
 
   post "/listings" do
     # make a new listing
@@ -17,12 +17,13 @@ class ListingsController < ApplicationController
     Listing.find(params[:id]).to_json
   end
 
-  get "/listings/:id/edit" do
-  end
+  # get "/listings/:id/edit" do
+  # end
 
   patch "/listings/:id" do
+    # edit a listing
   end
 
-  delete "/listings/:id/delete" do
+  delete "/listings/:id" do
   end
 end

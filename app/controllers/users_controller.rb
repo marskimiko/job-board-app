@@ -17,12 +17,12 @@ class UsersController < ApplicationController
   end
 
 
-  get "/users/:id/edit" do
-  end
+  # get "/users/:id/edit" do
+  # end
 
   patch "/users/:id" do
   end
 
-  delete "/users/:id/delete" do
+  delete "/users/:id" do
   end
 end
