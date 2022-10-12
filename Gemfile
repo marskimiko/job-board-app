@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'activerecord', '~> 5.2'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rack-contrib', "~> 2.3"
 gem 'rake'
 gem 'require_all'
 gem 'sqlite3'

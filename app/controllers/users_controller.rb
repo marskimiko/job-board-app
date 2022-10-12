@@ -2,11 +2,11 @@ class UsersController < ApplicationController
 
 
   get "/users" do
-
+    User.all.to_json
   end
 
-  get "/users/new" do
-  end
+  # get "/users/new" do
+  # end
 
   post "/users" do
   end
