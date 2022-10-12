@@ -1,4 +1,5 @@
 require './config/environment'
+# require "sinatra/json"
 
 class ApplicationController < Sinatra::Base
 
@@ -11,6 +12,6 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
-  
+
 
 end
