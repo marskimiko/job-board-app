@@ -10,6 +10,9 @@ class UsersController < ApplicationController
 
   post "/users" do
     # make a new user
+    if params[:name] != ""
+      User.create(params)
+    end
   end
 
   get "/users/:id" do

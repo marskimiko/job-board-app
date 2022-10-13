@@ -10,7 +10,9 @@ class ListingsController < ApplicationController
   # end
 
   post "/listings" do
-    # make a new listing
+    if params[:tile] != ""
+      Listing.create(params)
+    end
   end
 
   get "/listings/:id" do
