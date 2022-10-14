@@ -5,14 +5,17 @@ class CatsController < ApplicationController
    Cat.all.to_json
   end
 
-  # GET: /cats/new
-  get "/cats/new" do
-    erb :"/cats/new.html"
-  end
+  # get "/cats/new" do
+  #   erb :"/cats/new.html"
+  # end
 
   # POST: /cats
   post "/cats" do
-    redirect "/cats"
+    cat = Cat.create(
+      type: params[:type],
+      cat_id: params[:cat_id]
+    )
+    cat.to_json
   end
 
   # GET: /cats/5
