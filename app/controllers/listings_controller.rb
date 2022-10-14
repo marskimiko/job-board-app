@@ -5,16 +5,20 @@ class ListingsController < ApplicationController
     Listing.all.to_json
   end
 
-  get "/listings/:id" do
-    Listing.find(params[:id]).to_json
-  end
-
   post "/listings" do
     listing = Listing.create(
       title: params[:title],
-      body: params[:body]
+      body: params[:body],
+      completed: params[:completed],
+      date: params[:date],
+      user: current_user,
+      cat_id: params[:cat_id]
     )
     listing.to_json
+  end
+
+  get "/listings/:id" do
+    Listing.find(params[:id]).to_json
   end
 
   patch '/listings/:id' do
