@@ -11,11 +11,9 @@ class CatsController < ApplicationController
 
   # POST: /cats
   post "/cats" do
-    cat = Cat.create(
-      type: params[:type],
-      cat_id: params[:cat_id]
-    )
-    cat.to_json
+    if params[:type] != ""
+      Cat.create(params)
+    end
   end
 
   # GET: /cats/5
