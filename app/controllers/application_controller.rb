@@ -9,13 +9,14 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    "Hello World"
+    "Bye World"
   end
 
-  private
+ 
+  # private
 
-  def current_user
-    User.first
-  end
+  # def current_user
+  #   User.first
+  # end
 
 end

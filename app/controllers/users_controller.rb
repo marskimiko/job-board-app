@@ -1,19 +1,14 @@
-class UsersController < ApplicationController
+require './config/environment'
 
+class UserController < Sinatra::Base
+  # set :default_content_type, 'application/json'
 
-  # get "/users" do
-  #   User.all.to_json
-  # end
+  configure do
+    set :default_content_type, 'application/json'
+  end
 
-  # post "/users" do
-  #   if params[:name] != ""
-  #     User.create(params)
-  #   end
-  # end
-
-  # get "/users/:id" do
-  #   User.find(params[:id]).to_json
+  # get "/" do
+  #   "Bye World"
   # end
 
 end
-

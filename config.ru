@@ -18,4 +18,4 @@ use Rack::MethodOverride
 run ApplicationController
 use CatsController
 use ListingsController
-use UsersController
+# use UsersController
