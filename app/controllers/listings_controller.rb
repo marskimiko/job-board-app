@@ -6,13 +6,12 @@ class ListingsController < ApplicationController
   end
 
   post "/listings/new" do
-    listing = Listing.create(
+    cat = Cat.find_by(id: params[:cat_id])
+    listing = cat.listings.build(
       title: params[:title],
-      body: params[:body],
-      completed: params[:completed],
-      date: params[:date]
-      # cat_id: params[:cat_id]
+      body: params[:body]
     )
+    listing.save
     listing.to_json(:include => { :cat => { :only => :job_type }} )
   end
 

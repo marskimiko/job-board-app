@@ -14,6 +14,7 @@ gem 'bcrypt'
 gem 'tux'
 gem 'faker'
 gem 'rack-cors'
+gem 'byebug'
 
 group :test do
   gem 'rspec'
@@ -22,13 +23,5 @@ group :test do
 end
 
 group :development do
-  # gem "pry", "~> 0.14.1"
-
-  # Used to generate seed data
-  # https://github.com/faker-ruby/faker
-  # gem "faker", "~> 2.18"
-
-  # Automatically reload when there are changes
-  # https://github.com/alexch/rerun
   gem "rerun"
 end
