@@ -14,7 +14,7 @@ class ListingsController < ApplicationController
       user: current_user,
       cat_id: params[:cat_id]
     )
-    listing.to_json
+    listing.to_json(:include => { :cat => { :only => :job_type }} )
   end
 
   patch '/listings/:id' do
