@@ -15,6 +15,7 @@ gem 'tux'
 gem 'faker'
 gem 'rack-cors'
 gem 'byebug'
+gem 'hash_dig_and_collect'
 
 group :test do
   gem 'rspec'

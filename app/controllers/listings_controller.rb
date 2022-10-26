@@ -5,6 +5,11 @@ class ListingsController < ApplicationController
     # @notes.to_json(:include => { :user => { :only => :username } })
   end
 
+  get '/listings/:id' do
+    listing = Listing.find_by_id(params[:id])
+    listing.to_json
+  end
+
   post "/listings/new" do
     cat = Cat.find_by(id: params[:cat_id])
     listing = cat.listings.build(
@@ -28,5 +33,28 @@ class ListingsController < ApplicationController
     listing = Listing.find(params[:id])
     listing.destroy
   end
+
+  get '/filtered' do
+    Listing.all.to_json(:include => { :cat => { :only => :job_type }} )
+  end
+  
+
+  get '/filtered/:job_type' do
+    filtered = Listing.all.select do |lists|
+      lists.cat.job_type == params[:job_type]
+    end 
+    filtered.to_json
+  end
+
+  # filteredListings = Listing.all.select(params[:cat_id])
+    # filteredListings.to_json
+    # filtered = listings.select(params[:cat][:job_type])
+    # filtered = listings.all.select { |listing| listing.include? params[:cat][:job_type]}
+  # def filtered_listings
+  #   if cat_id = 'all' || cat_id = '' || cat_id = 'null'
+  #     listings
+  #   elsif cat_id > 0
+  #     Listing.includes(|listing| listing.cat.cat_id == :cat_id)
+  # end
 
 end

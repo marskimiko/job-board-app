@@ -35,6 +35,7 @@ GEM
     faker (2.23.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    hash_dig_and_collect (0.0.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     listen (3.7.1)
@@ -128,6 +129,7 @@ DEPENDENCIES
   byebug
   capybara
   faker
+  hash_dig_and_collect
   pry
   rack-contrib (~> 2.3)
   rack-cors

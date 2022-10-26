@@ -17,5 +17,10 @@ class CatsController < ApplicationController
     )
     cat.to_json  
   end
+
+  delete '/cats/:id' do
+    category = Cat.find(params[:id])
+    category.destroy
+  end
   
 end
