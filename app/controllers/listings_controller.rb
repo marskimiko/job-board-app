@@ -46,15 +46,4 @@ class ListingsController < ApplicationController
     filtered.to_json
   end
 
-  # filteredListings = Listing.all.select(params[:cat_id])
-    # filteredListings.to_json
-    # filtered = listings.select(params[:cat][:job_type])
-    # filtered = listings.all.select { |listing| listing.include? params[:cat][:job_type]}
-  # def filtered_listings
-  #   if cat_id = 'all' || cat_id = '' || cat_id = 'null'
-  #     listings
-  #   elsif cat_id > 0
-  #     Listing.includes(|listing| listing.cat.cat_id == :cat_id)
-  # end
-
 end
