@@ -10,11 +10,4 @@ class ApplicationController < Sinatra::Base
     "Bye World"
   end
 
- 
-  # private
-
-  # def current_user
-  #   User.first
-  # end
-
 end
