@@ -1,6 +1,5 @@
 class CatsController < ApplicationController
 
-  # GET: /cats
   get "/cats" do
    cats = Cat.all
    cats.to_json
