@@ -2,7 +2,6 @@ class ListingsController < ApplicationController
 
   get "/listings" do
     Listing.all.to_json(:include => { :cat => { :only => :job_type }} )
-    # @notes.to_json(:include => { :user => { :only => :username } })
   end
 
   get '/listings/:id' do
@@ -38,7 +37,6 @@ class ListingsController < ApplicationController
     Listing.all.to_json(:include => { :cat => { :only => :job_type }} )
   end
   
-
   get '/filtered/:job_type' do
     filtered = Listing.all.select do |lists|
       lists.cat.job_type == params[:job_type]
