@@ -34,6 +34,9 @@ class ListingsController < ApplicationController
     listing.destroy
   end
 
+  get '/filtered' do
+    Listing.all.to_json(:include => { :cat => { :only => :job_type }} )
+  end
   
 
   get '/filtered/:job_type' do
