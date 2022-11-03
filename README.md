@@ -4,6 +4,9 @@
 - Front-end: https://github.com/marskimiko/job-board-front-end
 - Back-end: https://github.com/marskimiko/job-board-app
 
+# Video Walkthrough:
+https://www.youtube.com/watch?v=xL0QjJo62lU
+
 # Blogpost about Quicky:
 https://dev.to/marskimiko/how-to-make-a-full-stack-crud-app-with-react-and-a-ruby-sinatra-api-29ed 
 
