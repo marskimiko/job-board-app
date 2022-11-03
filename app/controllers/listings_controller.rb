@@ -3,7 +3,7 @@ class ListingsController < ApplicationController
   get "/listings" do
     Listing.all.to_json(:include => { :cat => { :only => :job_type }} )
   end
-
+  
   get '/listings/:id' do
     listing = Listing.find_by_id(params[:id])
     listing.to_json
@@ -45,3 +45,4 @@ class ListingsController < ApplicationController
   end
 
 end
+
