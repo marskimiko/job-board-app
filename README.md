@@ -23,6 +23,40 @@ Quicky is a Job Board application for quick gigs. This application was inspired 
 - If you would like to create a new listing click "New Listing" in the navigation which will take you to a form to fill out
 - Once you are done filling out the form click "Create Listing" which will automatically take you to the "listings" page where you can see your new listing that you created
 
+## How to Use:
+
+**•** Click "Listings in the navigation to see all of the listings" 
+
+![Alt Text](phase-3-project-gifs/quicky-1.gif)
+
+**•** Use the dropdown menu to filter the listings by category
+
+![Alt Text](phase-3-project-gifs/quicky-2.gif)
+
+**•** Fill out the form and click "add" to create a new category
+
+![Alt Text](phase-3-project-gifs/quicky-3.gif)
+
+**•** Click the "edit" button to edit a listing
+
+![Alt Text](phase-3-project-gifs/quicky-4.gif)
+
+**•** Click the "save" button to save you edit
+
+![Alt Text](phase-3-project-gifs/quicky-5.gif)
+
+**•** If you want to delete a listing from the browser click the 🗑 button
+
+![Alt Text](phase-3-project-gifs/quicky-6.gif)
+
+**•** Click "New Listing" in the navigation to create a new listing
+
+![Alt Text](phase-3-project-gifs/quicky-7.gif)
+
+**•** Once you fill out the form click the "create listing" button which will take you back to the "Listings" page where you can see your new listing
+
+![Alt Text](phase-3-project-gifs/quicky-8.gif)
+
 ## Description of app: 
 
 This is a single page full-stack CRUD application that has a back-end that was creating using Ruby and a sinatra API which stores data which is then fetched from : http://localhost:9393/cats and http://localhost:9393/listings. The front-end was created using React and Javascript
