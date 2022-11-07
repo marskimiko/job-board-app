@@ -10,7 +10,7 @@ class CatsController < ApplicationController
     cat.to_json
   end
 
-  post "/cats/new" do
+  post "/cats" do
     cat = Cat.create(
       job_type: params[:job_type]
     )
