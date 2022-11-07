@@ -9,7 +9,7 @@ class ListingsController < ApplicationController
     listing.to_json
   end
 
-  post "/listings/new" do
+  post "/listings" do
     cat = Cat.find_by(id: params[:cat_id])
     listing = cat.listings.build(
       title: params[:title],
